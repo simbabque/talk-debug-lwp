@@ -1,14 +1,3 @@
-<style>
-/* .reveal pre {
-    height: 700px;
-    width: 125%
-    font-size: .65em;
-} */
-/* .reveal code {
-    max-height: 700px !important;
-} */
-</style>
-
 ## Debug LWP
 
 Debugging LWP applications all steps at the same time
