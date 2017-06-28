@@ -1,6 +1,6 @@
 use Dancer2;
 use LWP::UserAgent;
-
+use LWP::ConsoleLogger::Everywhere;
 
 get '/json' => sub {
     my $ua = LWP::UserAgent->new;
