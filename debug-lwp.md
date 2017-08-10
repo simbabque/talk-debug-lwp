@@ -1,3 +1,9 @@
+<style>
+.reveal pre {
+    width: 100%;
+}
+</style>
+
 ## Debug LWP
 
 Debugging LWP applications all steps at the same time
@@ -12,11 +18,12 @@ Julien Fiegehenn (simbabque)
 - SOAP::Lite
 - SOAP::Compile::WSDL
 - REST::Client
+- Web::Scraper
 - A bunch of others
 
 ---
 
-## probably not WWW::Mechanize::Chrome
+## not WWW::Mechanize::(?:Chrome|Firefox)
 ---
 ## often used under the hood
 ---
@@ -60,7 +67,7 @@ using advice from LWP::Debug
 
 ---
 
-```
+<pre>
 GET http://www.example.com
 User-Agent: libwww-perl/6.19
 
@@ -83,15 +90,18 @@ Title: Example Domain
 X-Cache: HIT
 X-Meta-Charset: utf-8
 X-Meta-Viewport: width=device-width, initial-scale=1
+</pre>
 
-<!doctype html>
-<html>
-<head>
+---
+
+<pre><code class="hljs xml" style="max-height: 550px; width: 120%;">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
     <title>Example Domain</title>\n
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style type="text/css">
+    &lt;style type="text/css"&gt;
     body {
         background-color: #f0f0f2;
         margin: 0;
@@ -104,8 +114,7 @@ X-Meta-Viewport: width=device-width, initial-scale=1
         margin: 5em auto;
  ...
 (+ 758 more bytes not shown)
-
-```
+</code></pre>
 
 ---
 
