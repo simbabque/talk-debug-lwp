@@ -18,6 +18,7 @@ Julien Fiegehenn (simbabque)
 - SOAP::Lite
 - SOAP::Compile::WSDL
 - REST::Client
+- Web::Scraper
 - A bunch of others
 
 ---
